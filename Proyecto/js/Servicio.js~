@@ -1,0 +1,32 @@
+var app = angular.module('project',[])
+
+app.service('users', function(){
+    this.usersData = function(){
+        return [
+            {
+                name: "Nombre Apellido 1",
+                email: "correo1@extension.com",
+                phone: "55-34-34-65-01",
+                address: "Calle A,No. 1,Col. A,CDMX"
+            },
+            {
+                name: "Nombre Apellido 2",
+                email: "correo2@extension.com",
+                phone: "55-34-34-65-02",
+                address: "Calle B,No. 2,Col. B,CDMX"
+            },
+            {
+                name: "Nombre Apellido 3",
+                email: "correo3@extension.com",
+                phone: "55-34-34-65-03",
+                address: "Calle C,No. 3,Col. C,CDMX"
+            },
+            {
+                name: "Nombre Apellido 4",
+                email: "correo4@extension.com",
+                phone: "55-34-34-65-04",
+                address: "Calle D,No. 4,Col. D,CDMX"
+            },
+            {
+                name: "Nombre Apellido 5",
+                email: "correo5@extension.com",
