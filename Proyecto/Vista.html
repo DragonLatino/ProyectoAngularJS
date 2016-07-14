@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta charset=”utf-8″>
+    <title>Informaci&oacute;n de Usuarios</title>
+    <meta name=”viewport” content=”width=device-width”>
+  </head>
+
+  <body ng-app="project">
+    <div ng-controller="mainController">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Tel&eacute;fono</th>
+            <th>Direcci&oacute;n</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in s">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.address}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <script src="js/Servicio.js"></script>
+  <script src="js/Controlador.js"></script>
+  </body>
+</html>
+
